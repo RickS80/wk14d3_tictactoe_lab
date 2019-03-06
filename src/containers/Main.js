@@ -114,7 +114,8 @@ clearBoard(){
                 cell7: "", 
                 cell8: "", 
                 cell9: ""},
-                player : 1
+                player : 1,
+                isWon: false
         }
     )
 }
