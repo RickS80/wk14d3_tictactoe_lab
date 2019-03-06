@@ -7,7 +7,7 @@ constructor(props){
     super(props);
     this.state = {
         gameObject: {
-            cell1: "O", 
+            cell1: "", 
             cell2: "X",
             cell3: "O", 
             cell4: "", 
@@ -28,16 +28,16 @@ handleClick(cellID){
     })  
 }
 
-componentDidMount(){
-    this.handleClick('cell9')
-}
+// componentDidMount(){
+//     this.handleClick('cell9')
+// }
 
 render(){
     
 return(
     <Fragment>
         <h1>Blub, Growl, Yum</h1>
-        <GameContainer cellData={this.state.gameObject}/>
+        <GameContainer cellData={this.state.gameObject} handClick={this.handleClick}/>
     </Fragment>
 )
 }

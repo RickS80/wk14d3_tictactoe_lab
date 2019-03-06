@@ -4,6 +4,13 @@ import React, { Component } from 'react';
 class Cell extends Component {
     constructor(props){
         super(props)
+        this.showBear = this.showBear.bind(this)
+        
+    }
+
+    showBear(){
+        
+        this.props.cellHandClick(this.props.id)
     }
 
 render(){
@@ -12,7 +19,7 @@ render(){
     } else if (this.props.cellData === 'O'){
         return (<div className="cell"><img src='../../images/Fish.png'/></div>)
     } else {
-        return (<div className ="cell"></div>)
+        return (<div onClick={this.showBear} className ="cell"></div>)
     }   
     }
 }

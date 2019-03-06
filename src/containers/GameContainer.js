@@ -12,15 +12,15 @@ class GameContainer extends Component {
     render(){
         return (
             <div className="gridContainer">
-            <Cell cellData={this.props.cellData.cell1}/>
-            <Cell cellData={this.props.cellData.cell2}/>
-            <Cell cellData={this.props.cellData.cell3}/>
-            <Cell cellData={this.props.cellData.cell4}/>
-            <Cell cellData={this.props.cellData.cell5}/>
-            <Cell cellData={this.props.cellData.cell6}/>
-            <Cell cellData={this.props.cellData.cell7}/>
-            <Cell cellData={this.props.cellData.cell8}/>
-            <Cell cellData={this.props.cellData.cell9}/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell1} id='cell1'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell2} id='cell2'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell3} id='cell3'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell4} id='cell4'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell5} id='cell5'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell6} id='cell6'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell7} id='cell7'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell8} id='cell8'/>
+            <Cell cellHandClick={this.props.handClick} cellData={this.props.cellData.cell9} id='cell9'/>
             </div>
         )
     }
