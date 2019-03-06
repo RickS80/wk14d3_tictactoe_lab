@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Cell from '../components/Cell';
+import './GameContainer.css'
 
 class GameContainer extends Component {
     constructor(props){
@@ -10,7 +11,7 @@ class GameContainer extends Component {
 
     render(){
         return (
-            <div>
+            <div className="gridContainer">
             <Cell cellData={this.props.cellData.cell1}/>
             <Cell cellData={this.props.cellData.cell2}/>
             <Cell cellData={this.props.cellData.cell3}/>

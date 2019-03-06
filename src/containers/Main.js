@@ -8,8 +8,8 @@ constructor(props){
     this.state = {
         gameObject: {
             cell1: "O", 
-            cell2: "",
-            cell3: "X", 
+            cell2: "O",
+            cell3: "O", 
             cell4: "", 
             cell5: "X", 
             cell6: "", 
@@ -22,7 +22,7 @@ constructor(props){
 render(){
 return(
     <Fragment>
-        <h1>Main Container</h1>
+        <h1>Blub, Growl, Yum</h1>
         <GameContainer cellData={this.state.gameObject}/>
     </Fragment>
 )

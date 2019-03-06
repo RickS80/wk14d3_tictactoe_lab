@@ -1,0 +1,16 @@
+.gridContainer {
+    display: grid;
+
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+    
+}
+
+.gridContainer img {
+    width: 100px;
+}
+
+.cell {
+    border-style: solid;
+    padding: 0px;
+}

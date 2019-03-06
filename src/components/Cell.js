@@ -7,14 +7,14 @@ class Cell extends Component {
     }
 
 render(){
-    return (
-        <h3>This cell is a {this.props.cellData}</h3>
-    )
+    if (this.props.cellData === 'X') {
+        return (<div className="cell"><img src='../../images/Bear.png'/></div>)
+    } else if (this.props.cellData === 'O'){
+        return (<div className="cell"><img src='../../images/Fish.png'/></div>)
+    } else {
+        return (<div className ="cell"></div>)
+    }   
+    }
 }
-
-
-
-}
-
 
 export default Cell;
