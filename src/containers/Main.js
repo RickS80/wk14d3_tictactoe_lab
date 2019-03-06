@@ -23,7 +23,7 @@ render(){
 return(
     <Fragment>
         <h1>Main Container</h1>
-        <GameContainer/>
+        <GameContainer cellData={this.state.gameObject}/>
     </Fragment>
 )
 }
