@@ -20,7 +20,40 @@ constructor(props){
     }
     this.handleClick = this.handleClick.bind(this);
     this.clearBoard = this.clearBoard.bind(this);
+    this.winCheck = this.winCheck.bind(this);
 }
+
+winCheck({cell1, cell2, cell3, cell4, cell5, cell6, cell7, cell8, cell9}){
+    if ((cell1 === cell2 && cell2 === cell3) && cell1 !== ''){
+        console.log('winner')
+    }
+    else if ((cell4 === cell5 && cell5 === cell6) && cell4 !== ''){
+        console.log('winner')
+    }
+    else if ((cell7 === cell8 && cell8 === cell9) && cell7 !== ''){
+        console.log('winner')
+    }
+    else if ((cell1 === cell4 && cell4 === cell7) && cell7 !== ''){
+        console.log('winner')
+    }
+    else if ((cell2 === cell5 && cell5 === cell8) && cell2 !== ''){
+        console.log('winner')
+    }
+    else if ((cell3 === cell6 && cell6 === cell9) && cell3 !== ''){
+        console.log('winner')
+    }
+    else if ((cell1 === cell5 && cell5 === cell9) && cell1 !== ''){
+        console.log('winner')
+    }
+    else if ((cell3 === cell5 && cell5 === cell7) && cell3 !== ''){
+        console.log('winner')
+    }
+}
+
+componentDidUpdate(){
+    this.winCheck(this.state.gameObject)
+}
+
 
 handleClick(cellID){
 
@@ -37,7 +70,7 @@ handleClick(cellID){
             newState.gameObject[cellID] = "O"
             newState.player = 1
             return newState;
-        })  
+        }) 
     }
 
     
